@@ -1,6 +1,6 @@
 {
-  "name": "Pachanga de los Jueves - Control de Gastos",
-  "short_name": "Pachanga Jueves",
+  "name": "Pachanga de los Jueves",
+  "short_name": "Pachanga",
   "description": "Gestión de asistencias y pagos para la pachanga semanal.",
   "start_url": "./index.html",
   "display": "standalone",
@@ -11,18 +11,20 @@
     {
       "src": "icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
