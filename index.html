@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Pachanga de los Jueves (CLOUD SYNC)</title>
     
-    <!-- ICONO PWA MEJORADO: Usando un icono simple y manifiesto para compatibilidad -->
-    <link rel="icon" href="data:image/svg+xml,%3Csvg width='256' height='256' viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='128' cy='128' r='128' fill='%23FF8C00'/%3E%3Cpath d='M128 0 A128 128 0 0 0 128 256 M25 128 A103 103 0 0 0 231 128' stroke='%23000' stroke-width='8' fill='none'/%3E%3C/svg%3E">
-    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg width='256' height='256' viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='128' cy='128' r='128' fill='%23FF8C00'/%3E%3Cpath d='M128 0 A128 128 0 0 0 128 256 M25 128 A103 103 0 0 0 231 128' stroke='%23000' stroke-width='8' fill='none'/%3E%3C/svg%3E">
+    <!-- Se han eliminado los enlaces de icono para la pantalla de inicio (PWA) -->
     
     <!-- Estilos y Iconos -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -221,7 +219,6 @@
             </div>
 
             <!-- Pestañas -->
-            <!-- NOTA: Se eliminan las clases 'sticky top-[170px] z-30 md:static' para que no se quede fija -->
             <nav class="flex p-1 bg-white border border-slate-200 rounded-xl mb-6 shadow-md">
                 <button onclick="Actions.setActiveTab('resumen')" class="tab-btn flex-1 py-2 rounded-lg text-[11px] md:text-xs font-bold uppercase tracking-wider transition-all" data-tab="resumen">Resumen</button>
                 <button onclick="Actions.setActiveTab('fijos')" class="tab-btn flex-1 py-2 rounded-lg text-[11px] md:text-xs font-bold uppercase tracking-wider transition-all" data-tab="fijos">Fijos</button>
@@ -743,9 +740,7 @@
                 return `
                     <div class="bg-white rounded-xl shadow-lg border border-red-100">
                         <div class="px-4 py-3 bg-red-50 border-b border-red-200">
-                            <h3 class="font-bold text-sm uppercase text-red-600 flex items-center gap-2">
-                                <i data-lucide="alert-triangle" class="w-4 h-4"></i> SALDO PENDIENTE (${debtPlayers.length} Jugadores)
-                            </h3>
+                            <h3 class="font-bold text-sm flex items-center gap-2 uppercase text-red-600"><i data-lucide="alert-triangle" class="w-4 h-4"></i> SALDO PENDIENTE (${debtPlayers.length} Jugadores)</h3>
                         </div>
                         <ul class="p-4 space-y-3">
                             ${debtRows}
@@ -1206,4 +1201,4 @@
         window.onload = initApp;
     </script>
 </body>
-  </html>
+</html>
